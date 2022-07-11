@@ -1,0 +1,68 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 540
+  ClientWidth = 784
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  DesignerMasterStyle = 0
+  object Layout1: TLayout
+    Align = Contents
+    Size.Width = 784.000000000000000000
+    Size.Height = 540.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+  end
+  object Layout2: TLayout
+    Align = Right
+    Padding.Top = 10.000000000000000000
+    Padding.Right = 10.000000000000000000
+    Padding.Bottom = 10.000000000000000000
+    Position.X = 608.000000000000000000
+    Size.Width = 176.000000000000000000
+    Size.Height = 513.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object Rectangle1: TRectangle
+      Align = Top
+      Fill.Color = xFFDAF5AF
+      Padding.Left = 10.000000000000000000
+      Padding.Top = 10.000000000000000000
+      Padding.Right = 10.000000000000000000
+      Padding.Bottom = 10.000000000000000000
+      Opacity = 0.699999988079071000
+      Position.Y = 10.000000000000000000
+      Size.Width = 166.000000000000000000
+      Size.Height = 47.000000000000000000
+      Size.PlatformDefault = False
+      object Button1: TButton
+        Align = Top
+        Position.X = 10.000000000000000000
+        Position.Y = 10.000000000000000000
+        Size.Width = 146.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'Calc/Recalc'
+        OnClick = Button1Click
+      end
+    end
+  end
+  object Label1: TLabel
+    Align = Bottom
+    Margins.Bottom = 10.000000000000000000
+    Position.Y = 513.000000000000000000
+    Size.Width = 784.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.HorzAlign = Center
+    Text = 
+      '[LClick]  [LMove]     [Alt+LClick]  [Alt+LMove]      [Shift+LCli' +
+      'ck]      [Ctrl+LMove]   [Ctrl+WMouse]'
+    TabOrder = 3
+  end
+end
